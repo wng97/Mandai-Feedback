@@ -143,7 +143,7 @@ There is total 10 API, these 10 API can categories to 2 main features, users and
 
 # Database design
 
-There is 2 main entities and table as picture below:
+There is 2 main entities and table:
 
 - users
 - feedback
