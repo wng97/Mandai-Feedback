@@ -36,11 +36,11 @@ npm run dev
 
 5. Can start playing around with the API, enjoy!
 
-# API Design
+### API Design
 
 There is total 10 API, these 10 API can categories to 2 main features, users and also feedback as below:
 
-### Users
+#### Users
 
 1. Register user API, **POST** request, required 3 params in request body
 
@@ -91,7 +91,7 @@ There is total 10 API, these 10 API can categories to 2 main features, users and
 /users/:id
 ```
 
-### Feedback
+#### Feedback
 
 1. Submit feedback API, **POST** request, required 1 param in request params, required 2 param in request body, **auth token is needed**
 
@@ -141,7 +141,19 @@ There is total 10 API, these 10 API can categories to 2 main features, users and
 /feedback/:id
 ```
 
-# Database design
+### Unit Test
+
+Unit test for this project is using [vitest](https://vitest.dev/guide/).
+
+```bash
+# to run up unit test
+npm run test
+
+# to run up test coverage
+npm run coverage
+```
+
+### Database design
 
 There is 2 main entities and table:
 
