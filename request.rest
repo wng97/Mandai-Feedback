@@ -1,0 +1,66 @@
+### Register user
+POST http://localhost:5001/users/register
+Content-Type: application/json
+
+{
+  "email": "aabb@gmail.com",
+  "password": "abc123",
+  "name": "aabb"
+}
+
+### Login user
+POST http://localhost:5001/users/login
+Content-Type: application/json
+
+{
+  "email": "ray@gmail.com",
+  "password": "abc123"
+}
+
+### Get user by id
+GET http://localhost:5001/users/11
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE3MjEwNjY1NjF9.RJJXWZCCZEQrtDzB_evD2BD93fsB29YEv2fJzZbd49g
+
+### Update user
+PUT http://localhost:5001/users/11
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE3MjEwNjY1NjF9.RJJXWZCCZEQrtDzB_evD2BD93fsB29YEv2fJzZbd49g
+
+{
+  "name": "rayyyy"
+}
+
+### Delete user
+DELETE http://localhost:5001/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE3MjEwNjY1NjF9.RJJXWZCCZEQrtDzB_evD2BD93fsB29YEv2fJzZbd49g
+
+### create feedback api
+POST http://localhost:5001/feedback/11/submit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE3MjEwNjY1NjF9.RJJXWZCCZEQrtDzB_evD2BD93fsB29YEv2fJzZbd49g
+
+{
+  "feedback": "very funnnnn!",
+  "rating": 5
+}
+
+### get feedback list
+GET http://localhost:5001/feedback/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE3MjEwNjY1NjF9.RJJXWZCCZEQrtDzB_evD2BD93fsB29YEv2fJzZbd49g
+
+### get feedback by feedback id
+GET http://localhost:5001/feedback/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE3MjEwNjY1NjF9.RJJXWZCCZEQrtDzB_evD2BD93fsB29YEv2fJzZbd49g
+
+### update feedback by feedback id
+PUT http://localhost:5001/feedback/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE3MjEwNjY1NjF9.RJJXWZCCZEQrtDzB_evD2BD93fsB29YEv2fJzZbd49g
+
+{
+  "feedback": "overall good experience, just a little bit hot"
+}
+
+### delete feedback by feedback id
+DELETE http://localhost:5001/feedback/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE3MjEwNjY1NjF9.RJJXWZCCZEQrtDzB_evD2BD93fsB29YEv2fJzZbd49g
